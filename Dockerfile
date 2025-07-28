@@ -14,7 +14,7 @@ RUN echo $TARGETARCH
 #     fi
 COPY . /mpp-solar/
 RUN pip install /mpp-solar/
-RUN apt update && apt install -y \
-        mc \
-        minicom \   
-        htop
+#RUN apt update && apt install -y \
+#        mc \
+#        minicom \   
+#        htop
