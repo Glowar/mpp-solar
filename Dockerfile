@@ -14,3 +14,5 @@ RUN echo $TARGETARCH
 #     fi
 COPY . /mpp-solar/
 RUN pip install /mpp-solar/
+RUN apt update
+RUN apt install mc
