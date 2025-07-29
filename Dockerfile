@@ -1,4 +1,5 @@
 FROM python:3.12
+RUN apt update && apt install mc -y
 
 RUN pip install --upgrade pip
 RUN python -V
@@ -14,7 +15,3 @@ RUN echo $TARGETARCH
 #     fi
 COPY . /mpp-solar/
 RUN pip install /mpp-solar/
-#RUN apt update && apt install -y \
-#        mc \
-#        minicom \   
-#        htop
