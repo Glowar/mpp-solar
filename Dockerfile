@@ -16,4 +16,5 @@ RUN echo $TARGETARCH
 COPY . /mpp-solar/
 RUN pip install /mpp-solar/
 
-ENTRYPOINT ["mpp-solar", "-C ./mpp-solar/mpp-solar.conf --daemon"]
+WORKDIR "/mpp-solar"
+CMD mpp-solar -C mpp-solar.conf --daemon
